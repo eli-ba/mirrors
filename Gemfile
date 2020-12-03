@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-gem 'json'
-gem 'ocra'
+gem 'json', '~>2.3.1'
+gem 'ocra', '~>1.3.11'

@@ -1,10 +1,10 @@
-Add this repo to your $PATH, then:
+Add this directory to your `$PATH`, then:
 ```
 cd /path/to/my/repo
-gitopus
+mirrors
 ```
 
-Generate Windows .exe
+Generate Windows executable
 ```
-ocra .\gitopus
+ocra .\mirrors
 ```
