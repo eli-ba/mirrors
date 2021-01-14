@@ -1,10 +1,19 @@
-Add this directory to your `$PATH`, then:
-```
-cd /path/to/my/repo
-mirrors
-```
+This utility facilitates adding multiple mirrors to your git repository.
 
-Generate Windows executable
+## Create a `mirrors.json` file under `~/myproject`
+```json
+{
+	"primary": "https://github.com/myusername/myproject.git",
+	"mirrors": [
+		"https://myusername@bitbucket.org/myusername/myproject-mirror1.git",
+		"https://myusername@bitbucket.org/myusername/myproject-mirror2.git"
+	]
+}
 ```
-ocra .\mirrors
+The `primary` URL will be push+fetch, the `mirrors` URLs will be fetch only.
+
+# Run with Docker
+```shell script
+cd ~/myproject
+docker run --rm -it -v "$PWD":/work eliba1/mirrors
 ```
