@@ -1,4 +1,4 @@
-This utility facilitates adding multiple mirrors to your git repository.
+# Mirrors: a way to add multiple mirrors to your git repository
 
 ## Create a `mirrors.json` file under `~/myproject`
 ```json
@@ -12,7 +12,7 @@ This utility facilitates adding multiple mirrors to your git repository.
 ```
 The `primary` URL will be push+fetch, the `mirrors` URLs will be fetch only.
 
-# Run with Docker
+## Run with Docker
 ```shell script
 cd ~/myproject
 docker run --rm -it -v "$PWD":/work eliba1/mirrors
