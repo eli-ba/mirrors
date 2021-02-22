@@ -1,4 +1,4 @@
-# Mirrors: Add multiple mirrors to your Git repository
+# Mirrors: Create mirrors for Git repositories
 
 ## Create a `mirrors.json` file under `~/myproject`
 ```json
